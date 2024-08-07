@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 
 namespace Infra.Repositorio
 {
-    internal class RepositorioSistemaFinanceiro : RepositoryGenerics<SistemaFinanceiro>, InterfaceSistemaFinanceiro
+    public class RepositorioSistemaFinanceiro : RepositoryGenerics<SistemaFinanceiro>, InterfaceSistemaFinanceiro
     {
-
+        public Task<IList<SistemaFinanceiro>> ListaSistemasUusario(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
