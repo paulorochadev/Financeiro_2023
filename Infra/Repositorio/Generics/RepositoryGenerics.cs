@@ -70,7 +70,7 @@ namespace Infra.Repositorio.Generics
         private bool _disposedValue = false;
 
         // Instantiate a SafeHandle instance.
-        private SafeHandle? _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+        private SafeHandle? _safeHandle = new SafeFileHandle(nint.Zero, true);
 
         // Public implementation of Dispose pattern callable by consumers.
         public void Dispose()
