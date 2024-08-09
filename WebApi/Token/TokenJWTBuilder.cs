@@ -43,7 +43,7 @@ namespace WebApi.Token
             return this;
         }
 
-        public TokenJWTBuilder AddClaims(Directory<string, string> claims)
+        public TokenJWTBuilder AddClaims(Dictionary<string, string> claims)
         {
             this._claims.Union(claims);
             return this;
