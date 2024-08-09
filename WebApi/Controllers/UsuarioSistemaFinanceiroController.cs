@@ -22,11 +22,11 @@ namespace WebApi.Controllers
             _iUsuarioSistemaFinanceiroServico = iUsuarioSistemaFinanceiroServico;
         }
 
-        [HttpGet("/api/ListarUusariosSistema")]
+        [HttpGet("/api/ListarUsuariosSistema")]
         [Produces("application/json")]
-        public async Task<object> ListarUusariosSistema(int idSistema)
+        public async Task<object> ListarUsuariosSistema(int idSistema)
         {
-            return await _interfaceUsuarioSistemaFinanceiro.ListarUusariosSistema(idSistema);
+            return await _interfaceUsuarioSistemaFinanceiro.ListarUsuariosSistema(idSistema);
         }
 
         [HttpPost("/api/CadastrarUsuarioNoSistema")]
