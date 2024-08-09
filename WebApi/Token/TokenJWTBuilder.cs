@@ -95,7 +95,7 @@ namespace WebApi.Token
                 expires: DateTime.UtcNow.AddMinutes(_expiryInMinutes),
                 signingCredentials: new SigningCredentials(
                     this._securityKey,
-                    SecurityAlgorithms.HmacSha256)
+                    SecurityAlgorithms.Aes128CbcHmacSha256)
                 );
 
             return new TokenJWT(token);
