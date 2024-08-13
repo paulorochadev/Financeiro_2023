@@ -96,6 +96,7 @@ namespace WebApi.Token
                 signingCredentials: new SigningCredentials(
                     this._securityKey,
                     SecurityAlgorithms.Aes128CbcHmacSha256)
+                //SecurityAlgorithms.HmacSha256)
                 );
 
             return new TokenJWT(token);

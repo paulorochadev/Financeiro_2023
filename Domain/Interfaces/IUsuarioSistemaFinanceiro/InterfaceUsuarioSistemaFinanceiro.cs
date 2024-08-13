@@ -10,8 +10,8 @@ namespace Domain.Interfaces.IUsuarioSistemaFinanceiro
 {
     public interface InterfaceUsuarioSistemaFinanceiro : InterfaceGeneric<UsuarioSistemaFinanceiro>
     {
-        Task<IList<UsuarioSistemaFinanceiro>> ListarUusariosSistema(int idSistema);
+        Task<IList<UsuarioSistemaFinanceiro>> ListarUsuariosSistema(int idSistema);
         Task RemoveUsuarios(List<UsuarioSistemaFinanceiro> usuarios);
-        Task<UsuarioSistemaFinanceiro> ObterUusarioPorEmail(string email);
+        Task<UsuarioSistemaFinanceiro> ObterUsuarioPorEmail(string email);
     }
 }
