@@ -1,6 +1,7 @@
 ﻿using Domain.Interfaces.ICategoria;
 using Domain.Interfaces.InterfaceServicos;
 using Entities.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriaController : ControllerBase
     {
         private readonly InterfaceCategoria _interfaceCategoria;
