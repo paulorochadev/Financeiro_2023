@@ -31,7 +31,7 @@ namespace Infra.Repositorio
             }
         }
 
-        public async Task<UsuarioSistemaFinanceiro> ObterUusarioPorEmail(string emailUsuario)
+        public async Task<UsuarioSistemaFinanceiro> ObterUsuarioPorEmail(string emailUsuario)
         {
             using (var banco = new ContextBase(_optionsBuilder))
             {

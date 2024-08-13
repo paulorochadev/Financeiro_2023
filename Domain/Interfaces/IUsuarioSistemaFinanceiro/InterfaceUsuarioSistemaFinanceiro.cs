@@ -12,6 +12,6 @@ namespace Domain.Interfaces.IUsuarioSistemaFinanceiro
     {
         Task<IList<UsuarioSistemaFinanceiro>> ListarUsuariosSistema(int idSistema);
         Task RemoveUsuarios(List<UsuarioSistemaFinanceiro> usuarios);
-        Task<UsuarioSistemaFinanceiro> ObterUusarioPorEmail(string email);
+        Task<UsuarioSistemaFinanceiro> ObterUsuarioPorEmail(string email);
     }
 }
