@@ -25,6 +25,6 @@ namespace Entities.Entidades
         [ForeignKey("Categoria")]
         [Column(Order = 1)]
         public int IdCategoria { get; set; }
-        public Categoria Categoria { get; set; }
+        //public Categoria Categoria { get; set; }
     }
 }
